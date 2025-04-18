@@ -118,9 +118,9 @@ p {
 }
 
 .project-tile:hover{
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5);  /*   transform: scale() permet d'augmenter ou de réduire la taille d'un élément */
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);  /*   transform: scale() permet d'augmenter ou de réduire la taille d'un élément */
 }
 
 .project-tile img{
@@ -156,7 +156,7 @@ p {
 /* START CONTACT SECTION */
 .contact-links {
   width: 100%;
-  display: flex; /* Les éléments flex ne créent pas d'espace entre les items */
+  display: flex; /* Les éléments flex ne créent pas d'espace entre les items.Les traits entre les icônes étaient dû aux espaces*/
   justify-content: space-evenly;
   
 }
