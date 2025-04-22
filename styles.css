@@ -62,12 +62,15 @@ body {
 
 
 main {
-  margin-top: 200px; 
+  margin-top: 80px; 
  
 } 
+h1 {
+  font-size: 3rem;
+}
 
 /* FONT SIZE */
-h1, h2, label{
+ h2, label{
   font-size: 2.5rem;
 }
 
@@ -85,7 +88,7 @@ p {
 /* END FLEX-COL RULES */
 
 /*START WELCOME SECTION */
-  #welcome-section h1:hover {
+  #welcome-section h1 {
     animation: font-color 5s ease-in-out infinite;
   }
  
@@ -95,6 +98,7 @@ p {
 #projects h2{
   text-align: center;
   grid-column: 1 /-1;
+  margin-top: 40px;
 }
 
 #projects{
@@ -106,6 +110,7 @@ p {
 
 }
 .project-tile {
+  margin-top: 40px;
   width: 300px; /* width 300px et height 180px pour faire un rectangle légèrement plus large */
   height: 180px;
   text-align: center;
@@ -157,13 +162,17 @@ p {
 /* END PROJECT SECTION */
 
 /* START CONTACT SECTION */
+.contact-section-header {
+  margin-top: 70px;
+}
+
 .contact-links {
+  margin-top: 40px;
   width: 100%; /*le flex ne marchait pas avant, j'ai eu l'idée toute seule :) */
   display: flex; /* Les éléments flex ne créent pas d'espace entre les items.Les traits entre les icônes étaient dû aux espaces*/
   justify-content: space-evenly;
   
 }
-
 
 .contact-link {
    font-size: 2.5rem;
@@ -174,6 +183,10 @@ p {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);  /*   transform: scale() permet d'augmenter ou de réduire la taille d'un élément */
+}
+
+.contact-form-header{
+  margin-top: 50px;
 }
 
 form{
