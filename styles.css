@@ -91,6 +91,26 @@ p {
   #welcome-section h1 {
     animation: font-color 5s ease-in-out infinite;
   }
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+   
+    margin: 0 auto;
+    display: block;
+  }
+
+
+  figure{
+    width: 100%;
+  }
+
+  figcaption {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
  
 /* END WELCOME SECTION */
 
