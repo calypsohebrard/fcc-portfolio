@@ -119,16 +119,15 @@ p {
   background-color: var(--secondary-color);
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-
-  transition: transform .2s; /* permet de changer de propriété de façon fluide ou selon une durée donnée.Ici c'est le transform de .project-tile:hover */
-
   
 }
+.project-tile a:hover .project-logo,
+.project-tile a:hover .project-title {
+  transform: scale(1.05);
+}
 
-.project-tile:hover{
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2);  /*   transform: scale() permet d'augmenter ou de réduire la taille d'un élément */
+.project-logo, .project-title {
+  transition: transform 0.4s ease;
 }
 
 .project-tile img{
