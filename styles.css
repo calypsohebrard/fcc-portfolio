@@ -101,16 +101,58 @@ p {
     display: block;
   }
 
-
-  figure{
-    width: 100%;
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    max-width: 100%;
   }
-
-  figcaption {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 1.5rem;
+  
+  /* Style de l'image de profil */
+  .profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
   }
+  
+  
+  
+  /* Style du bouton de téléchargement */
+  .download-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(74, 111, 165, 0.3);
+  }
+  
+  .download-button:hover {
+    background-color: var(--secondary-color-darker);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 111, 165, 0.4);
+  }
+  
+  .download-button:active {
+    transform: translateY(0);
+  }
+  
+  .download-icon {
+    font-size: 1.2rem;
+  }
+  
  
 /* END WELCOME SECTION */
 
