@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root{
   --main-background-color: white;
   --secondary-color: hsl(31 100% 50%);
@@ -341,4 +342,345 @@ input[type="submit"]{
   100% {
     color: red;
   }
+=======
+:root{
+  --main-background-color: white;
+  --secondary-color: hsl(31 100% 50%);
+  --main-font-color: black;
+  --secondary-color-darker: hsl(31 100% 25%);
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 60%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: "Quicksand", sans-serif; 
+  background-color: var(--main-background-color);
+}
+
+/* START NAV */
+.nav-container {
+  background-color: var(--secondary-color);
+  width: 100%;
+  position: fixed;
+  top:0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  z-index: 9999;
+}
+#navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+#navbar ul{
+    display: flex;
+    gap: 2em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    width: 100%;
+    justify-content: flex-end;
+      
+  }
+
+#navbar a {
+  text-decoration: none;
+  color: var(--main-font-color);
+}
+
+#navbar a:hover{
+  
+  background-color: var(--secondary-color-darker);
+}
+
+/* END NAV */
+
+
+main {
+  margin-top: 80px; 
+ 
+} 
+h1 {
+  font-size: 3rem;
+}
+
+/* FONT SIZE */
+ h2, label{
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 2rem;
+}
+/* END FONT SIZE */
+
+/* FLEX-COL RULES START */
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* END FLEX-COL RULES */
+
+/*START WELCOME SECTION */
+  #welcome-section h1 {
+    animation: font-color 5s ease-in-out infinite;
+  }
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+   
+    margin: 0 auto;
+    display: block;
+  }
+
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    max-width: 100%;
+  }
+  
+  /* Style de l'image de profil */
+  .profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  
+  
+  /* Style du bouton de téléchargement */
+  .download-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(74, 111, 165, 0.3);
+  }
+  
+  .download-button:hover {
+    background-color: var(--secondary-color-darker);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 111, 165, 0.4);
+  }
+  
+  .download-button:active {
+    transform: translateY(0);
+  }
+  
+  .download-icon {
+    font-size: 1.2rem;
+  }
+  
+ 
+/* END WELCOME SECTION */
+
+/* START PROJECTS SECTION */
+#projects h2{
+  text-align: center;
+  grid-column: 1 /-1;
+  margin-top: 40px;
+}
+
+#projects{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+ 
+
+}
+.project-tile {
+  margin-top: 40px;
+  width: 300px; /* width 300px et height 180px pour faire un rectangle légèrement plus large */
+  height: 180px;
+  text-align: center;
+  background-color: var(--main-background-color);
+  border: 2px var(--secondary-color) solid;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  
+}
+.project-tile a:hover .project-logo,
+.project-tile a:hover .project-title {
+  transform: scale(1.05);
+}
+
+.project-logo, .project-title {
+  transition: transform 0.4s ease;
+}
+
+.project-tile img{
+  width: 20%;
+  height: 50%;
+  object-fit: contain;
+
+}
+
+
+
+.project-tile a {
+  text-decoration: none;
+  color: var(--main-font-color);
+}
+.project-tile p {
+  border: 2px solid var(--main-font-color);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 50%;
+  margin: 2px auto;
+  
+}
+
+.project-title a {
+  text-decoration: none;
+  
+}
+
+/* END PROJECT SECTION */
+
+/* START CONTACT SECTION */
+.contact-section-header {
+  margin-top: 70px;
+}
+
+.contact-links {
+  margin-top: 40px;
+  width: 100%; /*le flex ne marchait pas avant, j'ai eu l'idée toute seule :) */
+  display: flex; /* Les éléments flex ne créent pas d'espace entre les items.Les traits entre les icônes étaient dû aux espaces*/
+  justify-content: space-evenly;
+  
+}
+
+.contact-link {
+   font-size: 2.5rem;
+   transition: transform .2s; /* permet de changer de propriété de façon fluide ou selon une durée donnée.Ici c'est le transform de .project-tile:hover */
+   
+}
+.contact-link:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);  /*   transform: scale() permet d'augmenter ou de réduire la taille d'un élément */
+}
+
+.contact-form-header{
+  margin-top: 50px;
+}
+
+form{
+  padding: 20px 0;
+  
+}
+
+
+
+input, textarea {
+  width: 100%; /*pour input il occupe 100% de la largeur de label son parent, pour textarea il occupe la largeur de son parent form */
+  padding: 12px;
+  margin: 5px 0 15px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 8px;
+  font-size: 16px;
+
+}
+
+
+
+input[type="email"]{
+  height: 30px;
+  width: 300px; /* je rajoute ce width 300px parce qu'il n'était pas assez large avec le 100% */
+}
+
+input[type="submit"]{
+  margin: 20px auto 0 auto;
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px var(--secondary-color) solid;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+} 
+  
+
+/* END CONTACT SECTION */
+
+/* START MEDIA RULES */
+@media only screen and (max-width: 500px) {
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1em;
+}
+#navbar ul {
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+   padding: 0;
+   gap: 1em;
+
+}
+#projects{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  justify-items: center;
+}
+.project-tile {
+  width: 100%;
+ 
+  
+  
+}
+.contact-form-header{
+  text-align: center;
+}
+}
+/* END MEDIA RULES */
+
+
+/* KEY FRAMES */
+@keyframes font-color {
+  25% {
+     color: yellow;
+  }
+  50% {
+    color: purple;
+  }
+  100% {
+    color: red;
+  }
+>>>>>>> 70ed1722a29d712ba38d7a57a6741db81fb2f6e5
 }
