@@ -62,17 +62,20 @@ body {
 
 
 main {
-  margin-top: 200px; 
+  margin-top: 80px; 
  
 } 
+h1 {
+  font-size: 3rem;
+}
 
 /* FONT SIZE */
-h1, h2, label{
+ h2, label{
   font-size: 2.5rem;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 /* END FONT SIZE */
 
@@ -85,9 +88,71 @@ p {
 /* END FLEX-COL RULES */
 
 /*START WELCOME SECTION */
-  #welcome-section h1:hover {
+  #welcome-section h1 {
     animation: font-color 5s ease-in-out infinite;
   }
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+   
+    margin: 0 auto;
+    display: block;
+  }
+
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    max-width: 100%;
+  }
+  
+  /* Style de l'image de profil */
+  .profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  
+  
+  /* Style du bouton de téléchargement */
+  .download-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(74, 111, 165, 0.3);
+  }
+  
+  .download-button:hover {
+    background-color: var(--secondary-color-darker);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 111, 165, 0.4);
+  }
+  
+  .download-button:active {
+    transform: translateY(0);
+  }
+  
+  .download-icon {
+    font-size: 1.2rem;
+  }
+  
  
 /* END WELCOME SECTION */
 
@@ -95,6 +160,7 @@ p {
 #projects h2{
   text-align: center;
   grid-column: 1 /-1;
+  margin-top: 40px;
 }
 
 #projects{
@@ -106,6 +172,7 @@ p {
 
 }
 .project-tile {
+  margin-top: 40px;
   width: 300px; /* width 300px et height 180px pour faire un rectangle légèrement plus large */
   height: 180px;
   text-align: center;
@@ -114,16 +181,15 @@ p {
   background-color: var(--secondary-color);
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-
-  transition: transform .2s; /* permet de changer de propriété de façon fluide ou selon une durée donnée.Ici c'est le transform de .project-tile:hover */
-
   
 }
+.project-tile a:hover .project-logo,
+.project-tile a:hover .project-title {
+  transform: scale(1.05);
+}
 
-.project-tile:hover{
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
-  transform: scale(1.2);  /*   transform: scale() permet d'augmenter ou de réduire la taille d'un élément */
+.project-logo, .project-title {
+  transition: transform 0.4s ease;
 }
 
 .project-tile img{
@@ -157,13 +223,17 @@ p {
 /* END PROJECT SECTION */
 
 /* START CONTACT SECTION */
+.contact-section-header {
+  margin-top: 70px;
+}
+
 .contact-links {
+  margin-top: 40px;
   width: 100%; /*le flex ne marchait pas avant, j'ai eu l'idée toute seule :) */
   display: flex; /* Les éléments flex ne créent pas d'espace entre les items.Les traits entre les icônes étaient dû aux espaces*/
   justify-content: space-evenly;
   
 }
-
 
 .contact-link {
    font-size: 2.5rem;
@@ -174,6 +244,10 @@ p {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);  /*   transform: scale() permet d'augmenter ou de réduire la taille d'un élément */
+}
+
+.contact-form-header{
+  margin-top: 50px;
 }
 
 form{
@@ -225,6 +299,7 @@ input[type="submit"]{
   text-align: center;
   padding: 1em;
 }
+
 #navbar ul {
    display: flex;
    flex-direction: column;
@@ -232,6 +307,9 @@ input[type="submit"]{
    padding: 0;
    gap: 1em;
 
+}
+#welcome-section {
+  margin-top: 150px;
 }
 #projects{
   display: grid;

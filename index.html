@@ -1,16 +1,22 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="portfolio page">
     <meta name="tags" content="portfolio, fcc, project">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Maven+Pro:wght@400..900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    
     <title>Calypso H Portfolio</title>
   </head>
   <body>
@@ -29,7 +35,15 @@
       <!-- START WELCOME SECTION -->
       <section id="welcome-section" class="flex-col">
         <h1>Calypso H's portfolio</h1>
-        <p>Web developer</p>
+        <div class="profile-section">
+        <img class="profile-picture" src="assets/profile_picture.JPG" alt="profile-picture" loading="lazy">
+        <a href="assets/DéveloppeurCv.pdf" download class="download-button">
+          
+          Download my resume (PDF)
+        </a>
+        </div>
+        <p>Once a traditional painter, I’ve discovered a new way to create—through languages like HTML, CSS, PHP, and beyond.</p>
+        <p>Code now replaces the brush, and my goal remains: to craft beautiful new canvases with you.</p>
       </section>
       <!-- END WELCOME SECTION-->
 
@@ -62,16 +76,13 @@
         <a id="profile-link" class="contact-link" href="https://github.com/calypsohebrard" target="_blank" rel="noreferrer">
          <i class="fa-brands fa-github" style="color: #e89700; text-decoration: none;"></i>
         </a>
-        <a class="contact-link" href="#" target="_blank" rel="noreferrer">
+        <a class="contact-link" href="mailto:calypso.hebrard@laposte.net" target="_blank" rel="noreferrer">
          <i class="fa-regular fa-envelope" style="color: #e89700; text-decoration: none;"></i>
-        </a>
-        <a class="contact-link" href="#" target="_blank" rel="noreferrer">
-          <i class="fa-solid fa-phone" style="color: #e89700; text-decoration: none;"></i>
         </a>
        </div>
         <div class="contact-form">
           <h2 class="contact-form-header">You can also reach me here:&nbsp;</h2>
-          <form method="post" action="#" class="flex-col">
+          <form method="post" action="https://formspree.io/f/xdkgokej" class="flex-col">
             <label class="flex-col" for="email">Your email address<input id="email" type="email" name="email" required></label>
             <textarea name="message" rows="5" col="10"></textarea>
             <input id="submit" type="submit" value="Send">
@@ -82,89 +93,4 @@
     </main>
   
   </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="portfolio page">
-    <meta name="tags" content="portfolio, fcc, project">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Maven+Pro:wght@400..900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <title>Calypso H Portfolio</title>
-  </head>
-  <body>
-    <!-- START NAV-->
-    <div class="nav-container">
-      <nav id="navbar">
-        <ul class="navbar-list">
-          <li><a class="navbar-link" href="#welcome-section">About</a></li>
-          <li><a class="navbar-link" href="#projects">Projects</a></li>
-          <li><a class="navbar-link" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-   <!-- END NAV -->
-    <main>
-      <!-- START WELCOME SECTION -->
-      <section id="welcome-section" class="flex-col">
-        <h1>Calypso H's portfolio</h1>
-        <p>Web developer</p>
-      </section>
-      <!-- END WELCOME SECTION-->
-
-      <!-- START PROJECTS SECTION-->
-      <section id="projects">
-        <h2 id="project-section-header">My Free code Camp Certification projects</h2>
-        <div class="project-tile">
-           <a href="https://calypsohebrard.github.io/fcc-tributpage/" rel="noreferrer" target="_blank">
-             <img class="project-logo" src="assets/Roberto-Saviano-rounded-2.jpg" alt="tribute_page_logo" loading="lazy">
-             <p class="project-title">Tribute Page</p>
-           </a>
-        </div>
-        <div class="project-tile">
-          <a href="https://calypsohebrard.github.io/fcc-technical/" rel="noreferrer" target="_blank">
-            <img class="project-logo" src="assets/symfony_black.png" alt="technical_page_logo" loading="lazy">
-            <p class="project-title">Technical Page</p>
-          </a>
-        </div>
-        <div class="project-tile">
-          <a href="https://calypsohebrard.github.io/fcc-landing-page/" rel="noreferrer" target="_blank">
-            <img class="project-logo" src="assets/book.png" alt="landing_page_logo" loading="lazy">
-            <p class="project-title">Landing Page</p>
-          </a>
-        </div>
-      </section>
-      <!-- START CONTACT SECTION-->
-      <section id="contact" class="flex-col">
-       <h2 class="contact-section-header">Contact me</h2>
-       <div class="contact-links">
-        <a id="profile-link" class="contact-link" href="https://github.com/calypsohebrard" target="_blank" rel="noreferrer">
-         <i class="fa-brands fa-github" style="color: #e89700; text-decoration: none;"></i>
-        </a>
-        <a class="contact-link" href="#" target="_blank" rel="noreferrer">
-         <i class="fa-regular fa-envelope" style="color: #e89700; text-decoration: none;"></i>
-        </a>
-        <a class="contact-link" href="#" target="_blank" rel="noreferrer">
-          <i class="fa-solid fa-phone" style="color: #e89700; text-decoration: none;"></i>
-        </a>
-       </div>
-        <div class="contact-form">
-          <h2 class="contact-form-header">You can also reach me here:&nbsp;</h2>
-          <form method="post" action="#" class="flex-col">
-            <label class="flex-col" for="email">Your email address<input id="email" type="email" name="email" required></label>
-            <textarea name="message" rows="5" col="10"></textarea>
-            <input id="submit" type="submit" value="Send">
-          </form>
-        </div>
-      </section>
-      <!-- END CONTACT SECTION-->
-    </main>
-  
-  </body>
->>>>>>> e562973d57b43e3816e4b9ddc90a739c92d8c149
 </html>
